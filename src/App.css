@@ -1,0 +1,122 @@
+/* .card{
+    width: 18rem;
+  } */
+
+:root {
+  --clr-primary: #651fff;
+  --clr-gray: #37474f;
+  --clr-gray-light: #b0bec5;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: var(--clr-gray);
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  justify-content: center;
+  grid-gap: 4rem;
+  margin: 2rem 2rem 4rem 2rem;
+}
+.container1:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 3px var(--clr-gray-light);
+}
+.container1 {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 0px 0px var(--clr-gray-light);
+  text-align: center;
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  max-height: fit-content;
+  height: auto;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+@media only screen and (max-width: 635px) {
+  .container1 {
+    margin-left: 2rem;
+    width: 246px;
+    height: 26rem;
+  }
+}
+@media only screen and (max-width: 635px) {
+  .text {
+    letter-spacing: 0;
+    font-size: 13px;
+  }
+}
+.img {
+  width: 8rem;
+  clip-path: circle(65px at center);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+.title {
+  font-size: 1.6rem;
+  margin: 0.5rem;
+}
+.text {
+  margin: 1rem 0.5rem 0.6rem 0.5rem;
+  font-size: 13px;
+  text-align: center;
+  word-spacing: 0px;
+  letter-spacing: 0.5px;
+  word-break: break-word;
+  overflow: hidden;
+  
+}
+.btn1 {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: var(--clr-primary);
+  padding: 1rem;
+  margin-top: auto;
+}
+.upper_div {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  padding: 5px;
+  flex-direction: column;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.hedding {
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: center;
+  color: orangered;
+  margin-top: 3.2rem;
+  padding: 5px;
+  text-shadow: 7px 4px 0px rgb(233 226 239 / 76%);
+}
+.team_content {
+  align-items: center;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  margin: 1rem 1rem;
+  padding: 1rem;
+}
